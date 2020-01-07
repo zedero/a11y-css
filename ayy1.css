@@ -9,7 +9,7 @@ img:not([src]),
 [a11y-invalid],
 .a11y-invalid
 {
-  border: 2px dashed red !important;
+  outline: 2px dashed red !important;
   min-width: 15px !important;
   min-height: 15px !important;
 }
