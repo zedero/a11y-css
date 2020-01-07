@@ -6,6 +6,7 @@ img:not([alt]),
 img[alt=""],
 img[src=""],
 img:not([src]),
+a:not([href]),
 [a11y-invalid],
 .a11y-invalid
 {
