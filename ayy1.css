@@ -1,0 +1,29 @@
+input:not([title]):not([aria-label]):not([aria-labelledby]),
+select:not([title]):not([aria-label]):not([aria-labelledby]),
+input[type=submit]:not([value]),
+iframe:not([title]),
+img:not([alt]),
+img[alt=""],
+img[src=""],
+img:not([src]),
+[a11y-invalid],
+.a11y-invalid
+{
+  border: 2px dashed red !important;
+  min-width: 15px !important;
+  min-height: 15px !important;
+}
+
+html:not([lang])::after {
+  display: block;
+  min-width: 100px;
+  height: 100px;
+  content: 'MISSING HTML LANG ATTRIBUTE';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  color: red;
+  font-size: 2rem;
+  font-weight: bold;
+}
